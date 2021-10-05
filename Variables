@@ -1,0 +1,7 @@
+Single comment------------ //
+Multiline comment-------- /* */
+
+Variable declare:
+let x = 5;
+var y = 10;
+
