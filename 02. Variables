@@ -5,3 +5,21 @@ Variable declare:
 let x = 5; //work inside block
 var y = 10; //work whole program
 const pi = 3.1416; //can't be changed
+
+//valid
+let a = 'hello';
+let _a = 'hello';
+let $a = 'hello';
+
+//invalid
+Let 1a = 'hello'; // this gives an error
+
+//strings example
+const name = 'ram';
+const name1 = "hari";
+const result = `The names are ${name} and ${name1}`;
+console.log(result);
+
+//double quoted string
+var s1 = "hello! \"welcome to the DWA";
+console.log(s1);
