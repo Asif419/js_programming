@@ -23,3 +23,14 @@ console.log(result);
 //double quoted string
 var s1 = "hello! \"welcome to the DWA";
 console.log(s1);
+
+//infinity & NaN
+const number1 = 3/0;
+console.log(number1); // Infinity
+
+const number2 = -3/0;
+console.log(number2); // -Infinity
+
+// strings can't be divided by numbers
+const number3 = "abc"/3; 
+console.log(number3);  // NaN
