@@ -2,6 +2,6 @@ Single comment------------ //
 Multiline comment-------- /* */
 
 Variable declare:
-let x = 5;
-var y = 10;
-
+let x = 5; //work inside block
+var y = 10; //work whole program
+const pi = 3.1416; //can't be changed
