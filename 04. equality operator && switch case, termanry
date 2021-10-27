@@ -1,0 +1,44 @@
+== will convert type to compare 
+
+const age = 18;
+const ageCheck = age == 18;
+console.log(ageCheck); // output: true
+
+const age = '18';
+const ageCheck = age === 18;
+console.log(ageCheck); // output: false
+//because string 18 can't compared by number 18 with === operator, but
+
+const age = '18';
+const ageCheck = age == 18;
+console.log(ageCheck); // output: true
+//this is true because string 18 is converted to number by == operator
+
+
+-------------------
+switch case example:
+
+const day = prompt("Enter a day");
+
+switch (day) {
+  case "Sunday":
+    console.log("Weekend");
+    break;
+  case "Monday":
+    console.log("Week Start");
+    break;
+  default:
+    console.log("Sorry! type correctly");
+}
+
+---------------
+
+statement vs expression
+
+statement means full sentence like if-else statement
+or ending with ; is statement
+
+const sentence = "Hello world";
+//here hello world is expression and full sentence is statement
+
+---------------
