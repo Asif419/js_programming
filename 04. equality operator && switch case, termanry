@@ -42,3 +42,11 @@ const sentence = "Hello world";
 //here hello world is expression and full sentence is statement
 
 ---------------
+
+ternary operator example:
+
+let age = 18;
+// let drink = age > 25 ? "wine" : "water";
+// console.log(drink);
+
+console.log(`I need some ${drink = age > 18 ? 'wine' : 'water'} `);
