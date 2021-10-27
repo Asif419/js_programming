@@ -1,0 +1,15 @@
+white means string blue means number
+
+//type conversion
+const year = "1998";
+console.log(Number(year), year);
+const name = "Asif";
+console.log(Number(name)); //outpu: NaN
+console.log(String(25), 25);
+
+
+//type coercion
+console.log("I am " + 23 + " years old");
+//here + sign converted number 23 to string
+console.log("23" - "10" - 10);
+//here - sign converted string 23 to number
