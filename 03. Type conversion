@@ -13,3 +13,19 @@ console.log("I am " + 23 + " years old");
 //here + sign converted number 23 to string
 console.log("23" - "10" - 10);
 //here - sign converted string 23 to number
+
+
+-----------------
+
+5 falsy values : 0, '', null, NaN, undefiened
+
+example of use falsy values:
+
+const money = 0;
+if (money) {
+  console.log("You can buy!");
+} else {
+  console.log("Learn to earn first!");
+}
+----------------
+
