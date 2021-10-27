@@ -1,3 +1,30 @@
+'' can work inside ""
+"" can work inside ``
+
+example: 
+
+const sentence = "I am " + firstName + " " + lastName;
+
+const sentenceTwo = `I am ${firstName} ${lastName}`;
+
+-----------------------
+
+Enter will work inside ``
+but not in '' / ""
+
+example:
+
+console.log("multiple \n\
+multiple \n\
+line");
+
+console.log(`multiple
+multiple
+line`);
+
+
+
+
 Single comment------------ //
 Multiline comment-------- /* */
 
