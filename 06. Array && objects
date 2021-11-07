@@ -55,3 +55,95 @@ console.log(asif['firstName']); // get objects element with []
 const nameKey = 'Name';
 console.log(asif['last' + nameKey]); //if use [] than expression ken be handaled between []
 
+-------------------
+
+//show information from a array by prompt
+
+const asif = {
+    firstName: 'Asif',
+    lastName: 'Shahariar',
+    age: 25,
+    friends: ['nanda', 'shafy', 'habib']
+};
+
+const data = prompt("Which information do you want to know about Asif?");
+
+if (asif[data]) {
+    console.log(asif[data]);
+} else {
+    console.log("Wrong information!");
+}
+
+---------------------
+
+asif.college = 'Ghatail Cant pub'; //add another property in object
+asif['varsity'] = 'Daffodil'
+
+--------------------
+
+//calculate using a method (property of object)
+
+'use strict'
+
+const asif = {
+    firstName: 'Asif',
+    secoendName: 'Shahariar',
+    bithYear: 1997,
+    location: 'Dhaka',
+    friends: ['nanda', 'shafy', 'habib', 'robin', 'farhad'],
+
+    calcAge: function () {
+        return 2021 - this.bithYear;
+    }
+};
+
+console.log(asif['calcAge']());
+
+-------------------
+
+//define a new property inside a method
+
+'use strict'
+
+const asif = {
+    firstName: 'Asif',
+    secoendName: 'Shahariar',
+    bithYear: 1997,
+    location: 'Dhaka',
+    friends: ['nanda', 'shafy', 'habib', 'robin', 'farhad'],
+
+    calcAge: function () {
+        //console.log(this);
+        this.age = 2021 - this.bithYear; 
+        return this.age;    
+    }
+};
+
+console.log(asif['calcAge']());
+console.log(asif.age);
+
+---------------
+
+//check a condisiton inside a expression
+
+'use strict'
+
+const asif = {
+    firstName: 'Asif',
+    secoendName: 'Shahariar',
+    bithYear: 1997,
+    location: 'Dhaka',
+    friends: ['nanda', 'shafy', 'habib', 'robin', 'farhad'],
+    hasDriverLicense: false,
+
+    calcAge: function () {
+        //console.log(this);
+        this.age = 2021 - this.bithYear; 
+        return this.age;    
+    },
+    summary: function () {
+        return `${this.firstName} live in ${this.location}. He have ${this.hasDriverLicense ? 'a' : 'no'} driver license`
+    }
+};
+console.log(asif['summary']());
+
