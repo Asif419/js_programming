@@ -1,7 +1,18 @@
 
 //write this code for find error easily
+
 'use strict'
 
+let writting;
+function print(writting) {
+    console.log(writting);
+}
 
+function juice(apple, banana) {
+    writting = `Make juice with ${apple} apple and ${banana} banana`
+    return writting;
+}
+
+print(juice(2, 2));
 
 
