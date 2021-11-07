@@ -16,3 +16,55 @@ function juice(apple, banana) {
 print(juice(2, 2));
 
 
+-------------------
+
+function decleration vs function expression
+
+example:
+
+//function decleration
+
+dress();
+function dress() {
+    console.log("hello! dress");
+}
+
+//function expression
+
+const word = function () {
+    console.log("hello! dress 2")
+}
+word();
+
+//in function decleration function can be caller before function
+    //decleration but in expression it will not happen
+
+---------------------
+arrow function example:
+
+//arrow functions are function expression but special one
+
+//arrow function
+'use strict'
+
+const birthYear = bY => 2021 - bY
+const value = birthYear(1973);
+console.log(value);
+
+-------------------
+
+//function calling from another function
+
+const fruitPiece = fruitAmout => fruitAmout * 4
+
+const juice = (apple, banana) => {
+    const applePieces = fruitPiece(apple);
+    const bananaPieces = fruitPiece(banana);
+
+    return `Make juice with ${applePieces} apple pieces and ${bananaPieces} bananaPieces`;
+}
+
+console.log(juice(2, 3));
+
+------------------
+
