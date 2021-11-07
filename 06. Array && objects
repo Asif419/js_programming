@@ -1,0 +1,57 @@
+//example of array
+
+'use strict'
+
+const calcAge = bithYear => 2021 - bithYear;
+
+const bithYears = [1990, 1997, 1999, 2001, 2008];
+
+const ages = [calcAge(bithYears[0]), calcAge(bithYears[bithYears.length - 1])];
+
+console.log(ages);
+
+--------------------
+
+//methods of array
+//methods in array
+
+const friends = ['habib', 'farhad', 'nanda', 'shafy'];
+friends.push('shovan'); // push is used to add new element on array
+console.log(friends);
+const newLength = friends.push('topu'); //to put length of new array on a variable
+console.log(friends);
+console.log(newLength);
+console.log(friends.length); //length will be updated automatically
+
+friends.unshift('rubel') //add element on the arry at the begging of the array
+console.log(friends);
+
+friends.pop(); //remove last element of the array
+const popped = friends.pop(); //popped element can be saved to array
+console.log(friends);
+console.log(popped);
+
+friends.shift() //removed first element from an array
+console.log(friends);
+
+console.log(friends.indexOf('nanda')); //find in which index that elements exists
+
+console.log(friends.includes('habib')) // true of flase (is that element have on array or not)
+
+--------------------
+
+// object creation
+
+const asif = {
+    firstName: 'Asif',
+    lastName: 'Shahariar',
+    age: 25,
+    friends: ['nanda', 'shafy', 'habib']
+};
+
+console.log(asif);
+console.log(asif.friends); // get objects element with . notation 
+console.log(asif['firstName']); // get objects element with []
+const nameKey = 'Name';
+console.log(asif['last' + nameKey]); //if use [] than expression ken be handaled between []
+
