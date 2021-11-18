@@ -2,10 +2,11 @@
 check node.js version in vs terminal
 
 node -v
-
 ----------
 install live server
 
 npm install live-server -g
-
 ---------
+use google, stachoverflow and mdn
+---------
+
