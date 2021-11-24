@@ -46,3 +46,21 @@ document.querySelector('.again').addEventListener('click', function () {
 });
 
 ----------------------
+
+//if we want to work with a common class name we have to put into a varible it first
+const modal = document.querySelector('.modal');
+
+//if we want to call a function inside addEventListener we will not use ()
+btnsOpenModal[i].addEventListener('click', openModal)
+
+//keyboard event is global element
+//three event for keyboard press (1.keyup -button release 2.keydown -press any button 3.keypress -continuesly press a key)
+// to close a modal after clicking escape
+document.addEventListener('keydown', function(e){
+    console.log("a key pressed");
+    if(e.key === 'Escape'){
+        if(!modal.classList.contains('hidden')){
+            closeModal();
+        }
+    }
+})
