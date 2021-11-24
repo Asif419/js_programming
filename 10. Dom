@@ -13,5 +13,36 @@ document.querySelector('.number').textContent = 13;
 document.querySelector('.score').textContent = 20;
 
 document.querySelector('.guess').value = 23;
+
+
 -------------
 
+
+//Making random number:
+(Math.random() * 20) + 1
+//return only integer value
+Math.trunc(Math.random() * 20) + 1;
+//set value of a class of html file
+document.querySelector('.message').textContent = message;
+//using function to set the value
+const displayMessage = function (message) {
+  document.querySelector('.message').textContent = message;
+};
+//If we want to do something after click we should use 
+//here (again button is declared in html with class name agian) after clicking againg button
+this funciton will work
+document.querySelector('.again').addEventListener('click', function () {
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+  // document.querySelector('.message').textContent = 'Start guessing...';
+  displayMessage('Start guessing...');
+  document.querySelector('.score').textContent = score;
+  document.querySelector('.number').textContent = '?';
+  document.querySelector('.guess').value = '';
+
+  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('.number').style.width = '15rem';
+});
+
+----------------------
